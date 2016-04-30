@@ -4,7 +4,6 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
 @font-face {
 	font-family: 'Ekibastuz-Black';
 	src:  url('../fonts/ekibastuz_black/Ekibastuz-Black.otf')  format('opentype'),
@@ -30,6 +29,14 @@
 	font-family: "Ekibastuz_Light";
 	src: url(../fonts/ek-l/Ekibastuz_Light.otf);
 }
+@font-face {
+    font-family: "Roboto Regular";
+    src: url("../fonts/Roboto_Regular.ttf");
+}
+@font-face {
+    font-family: "Roboto Bold";
+    src: url("../fonts/Roboto_Bold.ttf");
+}
 
 
 html, body {
@@ -49,7 +56,7 @@ section {
 }
 
 body {
-	font-family: 'Ekibastuz-Black';
+	font-family: 'Ekibastuz-Black',sans-serif;
 	font-size: 16px;
 }
 
@@ -321,10 +328,10 @@ h1 {
 	color: #ffffff;
 	text-transform: uppercase;
 	line-height: 1.3;
-	font-family: 'Ekibastuz-Black';
+	font-family: 'Ekibastuz-Black', sans-serif;
 }
 .main-content p {
-	font-family: 'CleaSans';
+	font-family: 'CleaSans', sans-serif;
 	font-size: 12pt;
 	line-height: 1.5;
 	color: #ffffff;
@@ -368,7 +375,7 @@ h1 {
 	padding-top: 10px;
 	text-align: center;
 	transition: all 300ms;
-	font-family: 'ekibastuz-bold';
+	font-family: 'ekibastuz-bold', sans-serif;
 }
 .reason:hover {
 	background: #FFFFFF;
@@ -389,7 +396,7 @@ h1 {
 .aside-block {
 	background: url("../img/letter-img.png") right bottom no-repeat #ffcc00;
 	padding: 20px 0 5px;
-	font-family: 'CleaSans';
+	font-family: 'CleaSans', sans-serif;
 }
 .aside-form h3 {
 	margin-bottom: 5px;
@@ -409,7 +416,7 @@ h1 {
 .news-form input {
 	border-radius: 5px;
 	display: inline-block;
-	font-family: "CleaSans";
+	font-family: "CleaSans", sans-serif;
 	height: 20px;
 	margin-bottom: 7px;
 	padding: 5px 10px 6px;
@@ -423,7 +430,7 @@ h1 {
 .news-btn {
 	width: 227px;
 	display: inline-block;
-	font-family: 'CleaSans-bold';
+	font-family: 'CleaSans-bold', sans-serif;
 	font-weight: bold;
 	font-size: 13px;
 	color: #ffffff;
@@ -487,7 +494,7 @@ h1 {
 .author, .copyright-text {
 	text-align: center;
 	color: white;
-	font-family: 'CleaSans';
+	font-family: 'CleaSans', sans-serif;
 	font-size: 11pt;
 }
 
@@ -535,11 +542,11 @@ h1 {
 	color: #ffffff;
 	text-transform: uppercase;
 	line-height: 1.2;
-	font-family: 'Ekibastuz-Black';
+	font-family: 'Ekibastuz-Black', sans-serif;
 	font-size: 28pt;
 }
 .slider-block h2 span {
-	font-family: 'Ekibastuz_Light';
+	font-family: 'Ekibastuz_Light', sans-serif;
 	display: block;
 	color: rgba(250,250,250,0.8);
 }
@@ -557,7 +564,7 @@ h1 {
 .flexslider h4 {
 	color: white;
 	font-size: 12pt;
-	font-family: 'ekibastuz-bold';
+	font-family: 'ekibastuz-bold', sans-serif;
 	width: 140px;
 	float: left;
 }
@@ -565,7 +572,7 @@ h1 {
 	overflow: hidden;
 }
 .flexslider p {
-	font-family: 'CleaSans';
+	font-family: 'CleaSans', sans-serif;
 	margin-top: 20px;
 	font-size: 10pt;
 	color: white;
@@ -637,15 +644,15 @@ h1 {
 	width: 197px;
 	border-radius: 5px;
 	font-size: 10pt;
-	font-family: 'CleaSans';
+	font-family: 'CleaSans', sans-serif;
 
 }
 .form-window input.kids {
 	width: 194px;
 }
-.form-window input:-moz-placeholder {font-size: 9pt; font-family: 'CleaSans';}
-.form-window input:-ms-input-placeholder {font-size: 9pt; font-family: 'CleaSans';}
-.form-window input::-webkit-input-placeholder {font-size: 9pt; font-family: 'CleaSans';}
+.form-window input:-moz-placeholder {font-size: 9pt; font-family: 'CleaSans', sans-serif;}
+.form-window input:-ms-input-placeholder {font-size: 9pt; font-family: 'CleaSans', sans-serif;}
+.form-window input::-webkit-input-placeholder {font-size: 9pt; font-family: 'CleaSans', sans-serif;}
 
 .form-window input:focus, .form-window select:focus {
 	border: 1px solid #64C0E6;
@@ -656,7 +663,7 @@ h1 {
 .form-window select {
 	height: 32px;
 	font-size: 8pt;
-	font-family: 'CleaSans';
+	font-family: 'CleaSans', sans-serif;
 	width: 211px;
 	color: #999999;
 	-webkit-appearance: none;
@@ -674,7 +681,7 @@ h1 {
 	border-bottom: 3px solid #30A7D9;
 	font-size: 13px;
 	color: white;
-	font-family: 'CleaSans';
+	font-family: 'CleaSans', sans-serif;
 	cursor: pointer;
 }
 .next-btn:hover {
@@ -725,7 +732,7 @@ h1 {
 }
 .form-window .user-photo p {
 	text-align: center;
-	font-family: 'CleaSans';
+	font-family: 'CleaSans', sans-serif;
 	font-size: 9pt;
 	color: #999999;
 }
@@ -742,7 +749,7 @@ h1 {
 	position: absolute;
 	top: 16px;
 	right: -50px;
-	background: url("../img/load-photo.png") 0px -38px no-repeat;
+	background: url("../img/load-photo.png") 0 -38px no-repeat;
 	width: 39px;
 	height: 40px;
 }
@@ -769,10 +776,10 @@ h1 {
 	left: 0;
 	top: 10px;
 	z-index: 10;
-	-webkit-box-shadow: inset 7px 0px 9px -8px rgba(0,0,0,0.75);
-	-moz-box-shadow: inset 7px 0px 9px -8px rgba(0,0,0,0.75);
-	box-shadow: inset 7px 0px 9px -8px rgba(0,0,0,0.75);
-	font-family: 'CleaSans';
+	-webkit-box-shadow: inset 7px 0 9px -8px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 7px 0 9px -8px rgba(0,0,0,0.75);
+	box-shadow: inset 7px 0 9px -8px rgba(0,0,0,0.75);
+	font-family: 'CleaSans', sans-serif;
 }
 .info-block > div {
 	position: relative;
@@ -810,7 +817,7 @@ h1 {
 	max-width: 540px;
 	margin: 30px auto 67px;
 	color: white;
-	font-family: 'CleaSans';
+	font-family: 'CleaSans', sans-serif;
 	font-size: 13px;
 	text-align: center;
 }
@@ -884,7 +891,7 @@ h1 {
 .about-announcement {
 	position: relative;
 	float: left;
-	font-family: 'CleaSans';
+	font-family: 'CleaSans', sans-serif;
 	background: #FFF4F0;
 	height: 217px;
 	padding: 20px 100px 20px 38px;
@@ -905,7 +912,7 @@ h1 {
 .about-announcement h4 {
 	color: #336699;
 	font-size: 12pt;
-	font-family: 'ekibastuz-bold';
+	font-family: 'ekibastuz-bold', sans-serif;
 	margin-bottom: 24px;
 }
 .title-announcement {
@@ -950,7 +957,7 @@ h1 {
 	background: #E6E6E6;
 	height: 217px;
 	position: relative;
-	font-family: 'CleaSans';
+	font-family: 'CleaSans', sans-serif;
 }
 .data-box:after {
 	content: "";
@@ -1069,7 +1076,7 @@ h1 {
 	width: 188px;
 	height: 44px;
 	font-size: 11pt;
-	font-family: 'CleaSans';
+	font-family: 'CleaSans', sans-serif;
 	color: white;
 	padding-top: 11px;
 	display: block;
@@ -1137,12 +1144,12 @@ h1 {
 .person-information {
 	float: left;
 	width: 248px;
-	font-family: 'CleaSans';
+	font-family: 'CleaSans', sans-serif;
 	padding-left: 22px;
 }
 .person-information h4 {
 	font-size: 12pt;
-	font-family: 'CleaSans';
+	font-family: 'CleaSans', sans-serif;
 	color: black;
 }
 .person-information span {
@@ -1174,7 +1181,7 @@ h1 {
 	text-align: center;
 	padding-top: 5px;
 	text-transform: uppercase;
-	font-family: 'CleaSans';
+	font-family: 'CleaSans', sans-serif;
 }
 .footer-about-person a:hover {
 	background: #33CC66;
@@ -1186,7 +1193,7 @@ h1 {
 	display: inline-block;
 	color: #B3B3B3;
 	font-size: 8pt;
-	font-family: 'CleaSans';
+	font-family: 'CleaSans', sans-serif;
 	padding-left: 16px;
 	margin-left: 25px;
 	vertical-align: top;
@@ -1196,6 +1203,265 @@ h1 {
 	display: block;
 }
 
+/****************** Iegor`s general styles *****************/
+.block-wrap {
+    width: 100%;
+}
+.block-content {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+input:focus::-webkit-input-placeholder {color: transparent}
+input:focus::-moz-placeholder {color: transparent}
+input:focus:-moz-placeholder {color: transparent}
+input:focus:-ms-input-placeholder {color: transparent}
 
+.clearfix {
+    clear: both;
+}
 
+/******************** panel - social **************************/
+.panel-social {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 140px;
+}
+.panel-social li a {
+    display: block;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 24px;
+}
+.panel-social .li-vk {background: #41658b;}
+.panel-social .li-youtube {background: #cc3300;}
+.panel-social .li-fb {background: #39579a;}
+.panel-social .li-tw {background: #00abf0;}
+.panel-social .li-google {background: #be3308;}
+.panel-social .li-inst {background: #2f69a1;}
+
+/**************** block - header ******************/
+.block-header {
+    background: #000000;
+}
+
+/*************** block - breadcrumbs ****************/
+.breadcrumbs {
+    margin: 30px 0;
+}
+.breadcrumbs li {
+    display: inline-block;
+    height: 45px;
+}
+.breadcrumbs li, .breadcrumbs li a {
+    font-size: 14pt;
+    font-family: "Roboto Regular", sans-serif;
+    color: #000000;
+}
+.breadcrumbs li a {
+    text-decoration: underline;
+}
+.breadcrumbs li a:hover {
+    text-decoration: none;
+}
+.breadcrumbs li a:after {
+    display: inline-block;
+    content: '';
+    height: 20px;
+    border: 1px solid #e8e8e8;
+    margin: 0 20px;
+    position: relative;
+    top: 5px;
+}
+
+/**************** block - footer **********************/
+.block-footer-top {
+    height: 175px;
+    background: #333333;
+    position: absolute;
+    left: 0;
+    bottom: 45px;
+}
+.footer-left {
+    height: 175px;
+    float: left;
+    width: 400px;
+    padding: 20px 0;
+    overflow-y: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.footer-left .logo {
+    display: inline-block;
+    margin: 0 0 15px 0;
+    float: none;
+    vertical-align: middle;
+}
+.footer-left .logo:after {
+    content: '';
+    display: inline-block;
+    height: 40px;
+    border: 1px solid #464646;
+    margin: 0 20px;
+}
+.write-to-us {
+    width: 150px;
+    border: 2px solid #00ccff;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    background: transparent;
+    vertical-align: middle;
+    font-family: "Roboto Regular", sans-serif;
+    font-size: 10pt;
+    color: #e6e6e6;
+    text-align: center;
+    padding: 5px 0;
+    cursor: pointer;
+    margin: 0 0 15px 0;
+}
+.write-to-us:hover {
+    background: #00ccff;
+}
+.write-to-us:active {
+    background: #00ccff;
+    border: none;
+}
+.footer-left .copyrights {
+    font-family: "CleaSans", sans-serif;
+    color: #999999;
+    font-size: 10pt;
+}
+.image-tie {
+    width: 73px;
+    height: 212px;
+    background: url("../img/tie.png") no-repeat center;
+    background-size: cover;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.footer-nav {
+    display: inline-block;
+}
+.footer-nav li {
+
+}
+.footer-nav li a {
+
+}
+.footer-right {
+    float: right;
+    width: 200px;
+    height: 175px;
+    padding: 20px 0;
+    position: relative;
+    overflow-y: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.footer-right .phone-number span {
+    font-family: 'Ekibastuz-Black', sans-serif;
+    font-size: 15pt;
+    color: #e6e6e6;
+    vertical-align: middle;
+}
+.footer-right .phone-number i {
+    font-size: 15pt;
+    margin-right: 10px;
+    background: #009933;
+    line-height: 20pt;
+    width: 18pt;
+    height: 18pt;
+    color: #ffffff;
+    vertical-align: middle;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+}
+.get-callback {
+    width: 200px;
+    border: 1px solid #707070;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: transparent;
+    vertical-align: middle;
+    font-family: "CleaSans", sans-serif;
+    font-size: 10pt;
+    color: #e6e6e6;
+    text-align: center;
+    padding: 5px 0;
+    cursor: pointer;
+    margin: 0 0 15px 0;
+}
+.get-callback:hover {
+    background: #707070;
+}
+.get-callback:active {
+    background: #707070;
+    border: none;
+}
+.footer-social {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.footer-social li {
+    display: inline-block;
+
+}
+
+.block-footer-bottom {
+    background: #e6e6e6;
+    height: 45px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.footer-links {
+    display: inline-block;
+    width: auto;
+}
+.footer-links li {
+    display: inline-block;
+}
+.footer-links li a {
+    display: block;
+    height: 45px;
+    font-family: "CleaSans", sans-serif;
+    color: #336699;
+    text-decoration: underline;
+    font-size: 10pt;
+    line-height: 45px;
+    border-right: 2px solid #d0d0d0;
+    padding: 0 15px;
+}
+.footer-links li:first-child a {padding-left: 0;}
+.footer-links li a:hover {
+    text-decoration: none;
+}
+.block-footer-bottom .author a {
+    display: block;
+    background: url("../img/webstroy_stroy-b.png")3px 4px no-repeat;
+    color: #000000;
+    margin-top: 10px;
+    font-size: 10pt;
+}
+.block-footer-bottom .author a:hover {
+    background: url("../img/webstroy_stroy-h.png")3px 4px no-repeat #ffffff;
+    border-radius: 10px;
+    color: #6666FF;
+}
+/****************** page - contacts **********************/
 
