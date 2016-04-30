@@ -1,0 +1,63 @@
+/*========== Desktop First Method ==========*//* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+}
+
+
+@media only screen and (max-width: 660px) {
+
+}
+
+@media only screen and (max-width: 610px) {
+
+}
+@media only screen and (max-width: 550px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 340px) {
+
+}
+@media only screen and (min-width: 1400px) {
+    /*h1 {*/
+        /*font-size: 37pt;*/
+    /*}*/
+    /*.main-content p {*/
+        /*font-size: 13pt;*/
+    /*}*/
+    /*.main-content {*/
+        /*width: 600px;*/
+    /*}*/
+    /*.container, .container-footer {*/
+        /*width: 1174px;*/
+    /*}*/
+    /*.aside-form>div {*/
+        /*width: 300px;*/
+    /*}*/
+    /*.aside-form h3 {*/
+        /*font-size: 19px;*/
+    /*}*/
+    /*.aside-form p {*/
+        /*font-size: 11px;*/
+    /*}*/
+    /*.news-form input {*/
+        /*width: 187px;*/
+    /*}*/
+    /*.news-btn {*/
+        /*width: 207px;*/
+    /*}*/
+    /*.social ul li a i {*/
+        /*height: 40px;*/
+    /*}*/
+}

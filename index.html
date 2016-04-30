@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>HKP</title>
+
+    <!-- vertical slider -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+
+    <link href="css/flexslider.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="css/media.css" rel="stylesheet" type="text/css">
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.horizonScroll.js"></script>
+
+    <!-- vertical slider -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+
+</head>
+<body>
+
+    <section data-role="section" id="section-section1">
+        <div id="video">
+            <div class="video-bg-blue"></div>
+            <video muted class="bgvideo" id="bg-video" preload autoplay loop>
+                <source src="video/Untitled2.mp4" type="video/mp4"/>
+                <source src="video/Untitled2.ogv" type="video/ogv"/>
+                <source src="video/Untitled2.webm" type="video/webm"/>
+            </video>
+        </div><!-- /.video -->
+        <header class="top-header">
+            <div class="container-footer">
+                <div class="header-line">
+
+                    <div class="logo-menu">
+                        <div class="logo">
+                            <a href="#"><img src="img/logo-img.png" alt=""></a>
+                        </div>
+                        <nav class="main-menu">
+                            <i class="fa fa-bars"></i>
+                        </nav>
+                    </div><!-- /.logo-menu -->
+
+                    <div class="right-header">
+                        <div class="over-btn">
+                            <p>
+                                <a href="#" class="enter-to-club">Вступить в клуб</a>
+                            </p>
+                        </div>
+                        <ul>
+                            <li>
+                                <form class="search-form">
+                                    <input name="q" type="text"  class="search" size="40"
+                                           placeholder="Поищи мной" maxlength="50" autocomplete="off">
+                                    <input class="search-submit" type="submit" value="">
+                                </form>
+                            </li>
+                            <li>
+                                <button class="phone-number" type="button"><i class="fa fa-phone"></i></button>
+                            </li>
+                            <li>
+                                <span class="enter"></span>
+                            </li>
+                        </ul>
+                    </div><!-- /.right-header -->
+                    <div class="bottom-line"></div>
+                </div><!-- /.header-line -->
+            </div>
+
+        </header>
+
+        <div class="container">
+            <nav class="page-nav">
+                <ul class="navigation">
+                    <li><a href="#" onclick="myscrollslider(1); return false" data="1" class="home active-page"></a></li>
+                    <li><a href="#" onclick="myscrollslider(2); return false" data="2" class="users"></a></li>
+                    <li><a href="#" onclick="myscrollslider(3); return false" data="3" class="star"></a></li>
+                    <li><a href="#" onclick="myscrollslider(4); return false" data="4" class="calendar"></a></li>
+                    <li><a href="#" onclick="myscrollslider(5); return false" data="5" class="comment"></a></li>
+                </ul>
+            </nav><!-- /.page-nav -->
+            <div class="main-content">
+                <h1>ХАРЬКОВСКИЙ КЛУБ<br> ПРЕДПРИНИМАТЕЛЕЙ</h1>
+                <p>
+                    Это бизнес-сообщество, созданное для общения и взаимного развития
+                    предпринимателей города Харькова. Наши члены получают и оказывают
+                    информационную, моральную и материальную поддержку друг другу,
+                    выстраивают бизнес-отношения, налаживают партнерские связи,
+                    обмениваются идеями, опытом и рекомендациями.
+                </p>
+                <ul class="ul-btn">
+                    <li><a href="#" class="enter-to-club">Вступить в клуб</a></li>
+                    <li><a href="#" class="reason">Зачем мне это нужно?</a></li>
+                </ul>
+            </div><!-- /.main-content -->
+            <aside class="aside-form clearfix">
+                <div>
+                    <div class="aside-block">
+                        <h3>Рассылка новостей</h3>
+                        <p>Только свежих и полезных, <br>без спама!</p>
+                        <div class="news-form-box">
+                            <form class="news-form">
+                                <input class="user-name" type="text" placeholder="Как к вам обращаться?">
+                                <input class="user-email" type="text" placeholder="Ваш e-mail">
+                                <button class="news-btn" type="submit">Подписаться</button>
+                            </form>
+                        </div>
+                        <p class="lock">
+                            <i class="fa fa-lock"></i>
+                            Ваши данные защищены
+                        </p>
+                    </div>
+                    <div class="social">
+                        <ul>
+                            <li class="blue-li"><a href="#"><i class="fa fa-vk"></i></a>
+                            <li class="red-li"><a href="#"><i class="fa fa-youtube"></i></a>
+                            <li class="blue-li"><a href="#"><i class="fa fa-facebook"></i></a>
+                            <li class="blue-light-li"><a href="#"><i class="fa fa-twitter"></i></a>
+                            <li class="red-li"><a href="#"><i class="fa fa-google-plus"></i></a>
+                            <li class="blue-li"><a href="#"><i class="fa fa-instagram"></i></a>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <div class="bottom-line"></div>
+        </div><!-- /.container -->
+        <footer class="main-footer">
+            <div class="footer-block">
+                <p class="copyright-text">© 2013–2016 Харьковский Клуб Предпринимателей</p>
+                <p class="author"><a href="#">Создание сайта - Webstroy</a></p>
+            </div>
+        </footer>
+
+    </section>
+    <section data-role="section" id="section-section2">
+        <header class="top-header">
+            <div class="container-footer">
+                <div class="header-line">
+
+                    <div class="logo-menu">
+                        <div class="logo">
+                            <a href="#"><img src="img/logo-img.png" alt=""></a>
+                        </div>
+                        <nav class="main-menu">
+                            <i class="fa fa-bars"></i>
+                        </nav>
+                    </div><!-- /.logo-menu -->
+
+                    <div class="right-header">
+                        <div class="over-btn">
+                            <p>
+                                <a href="#" class="enter-to-club">Вступить в клуб</a>
+                            </p>
+                        </div>
+                        <ul>
+                            <li>
+                                <form class="search-form">
+                                    <input name="q" type="text"  class="search" size="40"
+                                           placeholder="Поищи мной" maxlength="50" autocomplete="off">
+                                    <input class="search-submit" type="submit" value="">
+                                </form>
+                            </li>
+                            <li>
+                                <button class="phone-number" type="button"><i class="fa fa-phone"></i></button>
+                            </li>
+                            <li>
+                                <span class="enter"></span>
+                            </li>
+                        </ul>
+                    </div><!-- /.right-header -->
+                    <div class="bottom-line"></div>
+                </div><!-- /.header-line -->
+            </div>
+
+        </header>
+
+        <div class="container">
+            <nav class="page-nav">
+                <ul class="navigation">
+                    <li><a href="#" onclick="myscrollslider(1); return false" data="1" class="home"></a></li>
+                    <li><a href="#" onclick="myscrollslider(2); return false" data="2" class="users active-page"></a></li>
+                    <li><a href="#" onclick="myscrollslider(3); return false" data="3" class="star"></a></li>
+                    <li><a href="#" onclick="myscrollslider(4); return false" data="4" class="calendar"></a></li>
+                    <li><a href="#" onclick="myscrollslider(5); return false" data="5" class="comment"></a></li>
+                </ul>
+            </nav><!-- /.page-nav -->
+            <div class="slider-block">
+                <h2>
+                    ОСНОВНЫЕ ПРЕИМУЩЕСТВА
+                    <span>ЧЛЕНСТВА В НАШЕМ КЛУБЕ</span>
+                </h2>
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <figure>
+                                <img src="img/slider-img-1.png" alt="">
+                                <h4>Бесплатные семинары и мастер-классы</h4>
+                            </figure>
+                            <p>
+                                С другой стороны сложившаяся структура организации влечет за собой процесс
+                                внедрения и модернизации позиций
+                            </p>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/slider-img-2.png" alt="">
+                                <h4>Рассылка  ваших  объявлений</h4>
+                            </figure>
+                            <p>
+                                С другой стороны сложившаяся структура организации влечет за собой процесс
+                                внедрения и модернизации позиций
+                            </p>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/slider-img-3.png" alt="">
+                                <h4>Новые  знакомства  и связи</h4>
+                            </figure>
+                            <p>
+                                С другой стороны сложившаяся структура организации влечет за собой процесс
+                                внедрения и модернизации позиций
+                            </p>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/slider-img-4.png" alt="">
+                                <h4>Бесплатные семинары и мастер-классы</h4>
+                            </figure>
+                            <p>
+                                С другой стороны сложившаяся структура организации влечет за собой процесс
+                                внедрения и модернизации позиций
+                            </p>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/slider-img-5.png" alt="">
+                                <h4>Бесплатные семинары и мастер-классы</h4>
+                            </figure>
+                            <p>
+                                С другой стороны сложившаяся структура организации влечет за собой процесс
+                                внедрения и модернизации позиций
+                            </p>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/slider-img-6.png" alt="">
+                                <h4>Бесплатные семинары и мастер-классы</h4>
+                            </figure>
+                            <p>
+                                С другой стороны сложившаяся структура организации влечет за собой процесс
+                                внедрения и модернизации позиций
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- /.main-content -->
+            <div class="bottom-line"></div>
+        </div><!-- /.container -->
+        <footer class="main-footer">
+            <div class="footer-block">
+                <p class="copyright-text">© 2013–2016 Харьковский Клуб Предпринимателей</p>
+                <p class="author"><a href="#">Создание сайта - Webstroy</a></p>
+            </div>
+        </footer>
+    </section>
+    <section data-role="section" id="section-section3">
+        <header class="top-header">
+            <div class="container-footer">
+                <div class="header-line">
+
+                    <div class="logo-menu">
+                        <div class="logo">
+                            <a href="#"><img src="img/logo-img.png" alt=""></a>
+                        </div>
+                        <nav class="main-menu">
+                            <i class="fa fa-bars"></i>
+                        </nav>
+                    </div><!-- /.logo-menu -->
+
+                    <div class="right-header">
+                        <div class="over-btn">
+                            <p>
+                                <a href="#" class="enter-to-club">Вступить в клуб</a>
+                            </p>
+                        </div>
+                        <ul>
+                            <li>
+                                <form class="search-form">
+                                    <input name="q" type="text"  class="search" size="40"
+                                           placeholder="Поищи мной" maxlength="50" autocomplete="off">
+                                    <input class="search-submit" type="submit" value="">
+                                </form>
+                            </li>
+                            <li>
+                                <button class="phone-number" type="button"><i class="fa fa-phone"></i></button>
+                            </li>
+                            <li>
+                                <span class="enter"></span>
+                            </li>
+                        </ul>
+                    </div><!-- /.right-header -->
+                    <div class="bottom-line"></div>
+                </div><!-- /.header-line -->
+            </div>
+
+        </header>
+        <div class="container">
+            <nav class="page-nav">
+                <ul class="navigation">
+                    <li><a href="#" onclick="myscrollslider(1); return false" data="1" class="home"></a></li>
+                    <li><a href="#" onclick="myscrollslider(2); return false" data="2" class="users"></a></li>
+                    <li><a href="#" onclick="myscrollslider(3); return false" data="3" class="star active-page"></a></li>
+                    <li><a href="#" onclick="myscrollslider(4); return false" data="4" class="calendar"></a></li>
+                    <li><a href="#" onclick="myscrollslider(5); return false" data="5" class="comment"></a></li>
+                </ul>
+            </nav><!-- /.page-nav -->
+            <div class="slider-block members">
+                <h2>
+                    ИЗВЕСТНЫЕ И УСПЕШНЫЕ
+                    <span>ЧЛЕНЫ НАШЕГО КЛУБА</span>
+                </h2>
+                <div class="about-person-over">
+                    <div class="mCustomScrollbar" data-mcs-theme="dark">
+                        <div class="contentscroll">
+                            <ul id="person-list">
+                                <li class="active-person">
+                                    Владимир Владимиров
+                                    Дизайнер «Вебстрой»
+                                </li>
+                                <li>
+                                    Анна Владимиров
+                                    Дизайнер «Вебстрой»
+                                </li>
+                                <li>
+                                    Богдан Владимиров
+                                    Дизайнер «Вебстрой»
+                                </li>
+                                <li>
+                                    Валера Владимиров
+                                    Дизайнер «Вебстрой»
+                                </li>
+                                <li>
+                                    Вася Владимиров
+                                    Дизайнер «Вебстрой»
+                                </li>
+                                <li>
+                                    Дима Владимиров
+                                    Дизайнер «Вебстрой»
+                                </li>
+                                <li>
+                                    Петя Владимиров
+                                    Дизайнер «Вебстрой»
+                                </li>
+                                <li>
+                                    Коля Владимиров
+                                    Дизайнер «Вебстрой»
+                                </li>
+                            </ul>
+                        </div><!-- /.contentscroll -->
+                    </div>
+                    <div class="about-person">
+                        <div class="text-about visible-personData-1">
+                            <figure class="portrait">
+                                <img class="portrait" src="img/person-1.jpg" alt="">
+                                <a href="#">
+                                    <img src="img/logo-person.jpg" alt="" class="person-logo">
+                                </a>
+                            </figure>
+                            <div class="person-information">
+                                <h4>Владимир Владимиров</h4>
+                                <span>Дизайнер в компании «Вебстрой»</span>
+                                <p>
+                                    Это бизнес-сообщество, созданное для общения
+                                    и взаимного развитияпредпринимателей города
+                                    Харькова. Наши члены получают и оказывают
+                                    информационную, моральную и материальную...
+                                </p>
+                            </div>
+                            <div class="footer-about-person">
+                                <a href="#">Профиль</a>
+                                <span>В клубе с 2015</span>
+                            </div>
+                        </div>
+                        <div class="text-about visible-personData-2">
+                            <figure class="portrait">
+                                <img class="portrait" src="img/person-1.jpg" alt="">
+                                <a href="#">
+                                    <img src="img/logo-person.jpg" alt="" class="person-logo">
+                                </a>
+                            </figure>
+                            <div class="person-information">
+                                <h4>Анна Владимировна</h4>
+                                <span>Дизайнер в компании «Вебстрой»</span>
+                                <p>
+                                    Это бизнес-сообщество, созданное для общения
+                                    и взаимного развитияпредпринимателей города
+                                    Харькова. Наши члены получают и оказывают
+                                    информационную, моральную и материальную...
+                                </p>
+                            </div>
+                            <div class="footer-about-person">
+                                <a href="#">Профиль</a>
+                                <span>В клубе с 2015</span>
+                            </div>
+                        </div>
+                        <div class="text-about visible-personData-3">
+                            <figure class="portrait">
+                                <img class="portrait" src="img/person-1.jpg" alt="">
+                                <a href="#">
+                                    <img src="img/logo-person.jpg" alt="" class="person-logo">
+                                </a>
+                            </figure>
+                            <div class="person-information">
+                                <h4>Богдан Владимирович</h4>
+                                <span>Дизайнер в компании «Вебстрой»</span>
+                                <p>
+                                    Это бизнес-сообщество, созданное для общения
+                                    и взаимного развитияпредпринимателей города
+                                    Харькова. Наши члены получают и оказывают
+                                    информационную, моральную и материальную...
+                                </p>
+                            </div>
+                            <div class="footer-about-person">
+                                <a href="#">Профиль</a>
+                                <span>В клубе с 2015</span>
+                            </div>
+                        </div>
+                    </div><!-- /.about-person -->
+                    <div class="bottom-line"></div>
+                </div>
+            </div>
+            <div class="bottom-line"></div>
+        </div><!-- /.container -->
+        <footer class="main-footer">
+            <div class="footer-block">
+                <p class="copyright-text">© 2013–2016 Харьковский Клуб Предпринимателей</p>
+                <p class="author"><a href="#">Создание сайта - Webstroy</a></p>
+            </div>
+        </footer>
+    </section>
+    <section data-role="section" id="section-section4">
+        <header class="top-header">
+            <div class="container-footer">
+                <div class="header-line">
+
+                    <div class="logo-menu">
+                        <div class="logo">
+                            <a href="#"><img src="img/logo-img.png" alt=""></a>
+                        </div>
+                        <nav class="main-menu">
+                            <i class="fa fa-bars"></i>
+                        </nav>
+                    </div><!-- /.logo-menu -->
+
+                    <div class="right-header">
+                        <div class="over-btn">
+                            <p>
+                                <a href="#" class="enter-to-club">Вступить в клуб</a>
+                            </p>
+                        </div>
+                        <ul>
+                            <li>
+                                <form class="search-form">
+                                    <input name="q" type="text"  class="search" size="40"
+                                           placeholder="Поищи мной" maxlength="50" autocomplete="off">
+                                    <input class="search-submit" type="submit" value="">
+                                </form>
+                            </li>
+                            <li>
+                                <button class="phone-number" type="button"><i class="fa fa-phone"></i></button>
+                            </li>
+                            <li>
+                                <span class="enter"></span>
+                            </li>
+                        </ul>
+                    </div><!-- /.right-header -->
+                    <div class="bottom-line"></div>
+                </div><!-- /.header-line -->
+            </div>
+
+        </header>
+        <div class="container">
+            <nav class="page-nav">
+                <ul class="navigation">
+                    <li><a href="#" onclick="myscrollslider(1); return false" data="1" class="home"></a></li>
+                    <li><a href="#" onclick="myscrollslider(2); return false" data="2" class="users"></a></li>
+                    <li><a href="#" onclick="myscrollslider(3); return false" data="3" class="star"></a></li>
+                    <li><a href="#" onclick="myscrollslider(4); return false" data="4" class="calendar active-page"></a></li>
+                    <li><a href="#" onclick="myscrollslider(5); return false" data="5" class="comment"></a></li>
+                </ul>
+            </nav><!-- /.page-nav -->
+            <div class="slider-block announcement">
+                <h2>
+                    АНОНС МЕРОПРИЯТИЙ
+                    <span>НАШЕГО КЛУБА</span>
+                </h2>
+                <div class="preview-slider">
+                    <div class="flex-preview-slider">
+                        <ul class="slides">
+                            <li>
+                            <div class="slider-box">
+                                <img src="img/person-photo.png" alt="">
+                                <div class="about-announcement">
+                                    <p class="speaker-name"><span>СЕМИНАР</span>Спикер — Иванов Иван Иванович</p>
+                                    <a class="title-announcement" href="#">
+                                        <h4>
+                                            Защита прав бизнеса во время
+                                            проведения проверок милицией
+                                            и прокуратурой
+                                        </h4>
+                                    </a>
+                                    <p>
+                                        Это бизнес-сообщество, созданное для общения
+                                        и взаимного развитияпредпринимателей города
+                                        Харькова. Наши члены получают и оказывают
+                                        информационную, моральную и материальную...
+                                    </p>
+                                    <a class="readMore" href="#">Подробнее</a>
+                                </div><!-- /.about-announcement -->
+                                <div class="data-box">
+                                    <ul>
+                                        <li>
+                                            <span>10 Ноября 2015</span>
+                                        </li>
+                                        <li>
+                                            <span>18:00</span>
+                                        </li>
+                                    </ul>
+                                    <div class="counter">
+                                        <p>До события осталось</p>
+                                        <ul>
+                                            <li>
+                                                <p>06</p>
+                                                <p class="time">дней</p>
+                                            </li>
+                                            <li>
+                                                <p>22</p>
+                                                <p class="time">часов</p>
+                                            </li>
+                                            <li>
+                                                <p>12</p>
+                                                <p class="time">минут</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- /.counter -->
+                                    <div class="social-group">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-vk"></i></a>
+                                            <li><a href="#"><i class="fa fa-odnoklassniki"></i></a>
+                                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                                            <li><a href="#"><i class="fa fa-google-plus"></i></a>
+                                        </ul>
+                                    </div><!-- /.social -->
+                                </div><!-- /.data-box -->
+                                <div class="bottom-line"></div>
+                            </div>
+                        </li>
+                            <li>
+                                <div class="slider-box">
+                                    <img src="img/person-photo.png" alt="">
+                                    <div class="about-announcement">
+                                        <p class="speaker-name"><span>СЕМИНАР</span>Спикер — Иванов Иван Иванович</p>
+                                        <a class="title-announcement" href="#">
+                                            <h4>
+                                                Защита прав бизнеса во время
+                                                проведения проверок милицией
+                                                и прокуратурой
+                                            </h4>
+                                        </a>
+                                        <p>
+                                            Это бизнес-сообщество, созданное для общения
+                                            и взаимного развитияпредпринимателей города
+                                            Харькова. Наши члены получают и оказывают
+                                            информационную, моральную и материальную...
+                                        </p>
+                                        <a class="readMore" href="#">Подробнее</a>
+                                    </div><!-- /.about-announcement -->
+                                    <div class="data-box">
+                                        <ul>
+                                            <li>
+                                                <span>10 Ноября 2015</span>
+                                            </li>
+                                            <li>
+                                                <span>18:00</span>
+                                            </li>
+                                        </ul>
+                                        <div class="counter">
+                                            <p>До события осталось</p>
+                                            <ul>
+                                                <li>
+                                                    <p>06</p>
+                                                    <p class="time">дней</p>
+                                                </li>
+                                                <li>
+                                                    <p>22</p>
+                                                    <p class="time">часов</p>
+                                                </li>
+                                                <li>
+                                                    <p>12</p>
+                                                    <p class="time">минут</p>
+                                                </li>
+                                            </ul>
+                                        </div><!-- /.counter -->
+                                        <div class="social-group">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-vk"></i></a>
+                                                <li><a href="#"><i class="fa fa-odnoklassniki"></i></a>
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                                                <li><a href="#"><i class="fa fa-google-plus"></i></a>
+                                            </ul>
+                                        </div><!-- /.social -->
+                                    </div><!-- /.data-box -->
+                                    <div class="bottom-line"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="slider-box">
+                                    <img src="img/person-photo.png" alt="">
+                                    <div class="about-announcement">
+                                        <p class="speaker-name"><span>СЕМИНАР</span>Спикер — Иванов Иван Иванович</p>
+                                        <a class="title-announcement" href="#">
+                                            <h4>
+                                                Защита прав бизнеса во время
+                                                проведения проверок милицией
+                                                и прокуратурой
+                                            </h4>
+                                        </a>
+                                        <p>
+                                            Это бизнес-сообщество, созданное для общения
+                                            и взаимного развитияпредпринимателей города
+                                            Харькова. Наши члены получают и оказывают
+                                            информационную, моральную и материальную...
+                                        </p>
+                                        <a class="readMore" href="#">Подробнее</a>
+                                    </div><!-- /.about-announcement -->
+                                    <div class="data-box">
+                                        <ul>
+                                            <li>
+                                                <span>10 Ноября 2015</span>
+                                            </li>
+                                            <li>
+                                                <span>18:00</span>
+                                            </li>
+                                        </ul>
+                                        <div class="counter">
+                                            <p>До события осталось</p>
+                                            <ul>
+                                                <li>
+                                                    <p>06</p>
+                                                    <p class="time">дней</p>
+                                                </li>
+                                                <li>
+                                                    <p>22</p>
+                                                    <p class="time">часов</p>
+                                                </li>
+                                                <li>
+                                                    <p>12</p>
+                                                    <p class="time">минут</p>
+                                                </li>
+                                            </ul>
+                                        </div><!-- /.counter -->
+                                        <div class="social-group">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-vk"></i></a>
+                                                <li><a href="#"><i class="fa fa-odnoklassniki"></i></a>
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                                                <li><a href="#"><i class="fa fa-google-plus"></i></a>
+                                            </ul>
+                                        </div><!-- /.social -->
+                                    </div><!-- /.data-box -->
+                                    <div class="bottom-line"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="slider-box">
+                                    <img src="img/person-photo.png" alt="">
+                                    <div class="about-announcement">
+                                        <p class="speaker-name"><span>СЕМИНАР</span>Спикер — Иванов Иван Иванович</p>
+                                        <a class="title-announcement" href="#">
+                                            <h4>
+                                                Защита прав бизнеса во время
+                                                проведения проверок милицией
+                                                и прокуратурой
+                                            </h4>
+                                        </a>
+                                        <p>
+                                            Это бизнес-сообщество, созданное для общения
+                                            и взаимного развитияпредпринимателей города
+                                            Харькова. Наши члены получают и оказывают
+                                            информационную, моральную и материальную...
+                                        </p>
+                                        <a class="readMore" href="#">Подробнее</a>
+                                    </div><!-- /.about-announcement -->
+                                    <div class="data-box">
+                                        <ul>
+                                            <li>
+                                                <span>10 Ноября 2015</span>
+                                            </li>
+                                            <li>
+                                                <span>18:00</span>
+                                            </li>
+                                        </ul>
+                                        <div class="counter">
+                                            <p>До события осталось</p>
+                                            <ul>
+                                                <li>
+                                                    <p>06</p>
+                                                    <p class="time">дней</p>
+                                                </li>
+                                                <li>
+                                                    <p>22</p>
+                                                    <p class="time">часов</p>
+                                                </li>
+                                                <li>
+                                                    <p>12</p>
+                                                    <p class="time">минут</p>
+                                                </li>
+                                            </ul>
+                                        </div><!-- /.counter -->
+                                        <div class="social-group">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-vk"></i></a>
+                                                <li><a href="#"><i class="fa fa-odnoklassniki"></i></a>
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                                                <li><a href="#"><i class="fa fa-google-plus"></i></a>
+                                            </ul>
+                                        </div><!-- /.social -->
+                                    </div><!-- /.data-box -->
+                                    <div class="bottom-line"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- /.preview-slider -->
+            </div>
+            <div class="bottom-line"></div>
+        </div><!-- /.container -->
+        <footer class="main-footer">
+            <div class="footer-block">
+                <p class="copyright-text">© 2013–2016 Харьковский Клуб Предпринимателей</p>
+                <p class="author"><a href="#">Создание сайта - Webstroy</a></p>
+            </div>
+        </footer>
+    </section>
+    <section data-role="section" id="section-section5">
+        <header class="top-header">
+            <div class="container-footer">
+                <div class="header-line">
+
+                    <div class="logo-menu">
+                        <div class="logo">
+                            <a href="#"><img src="img/logo-img.png" alt=""></a>
+                        </div>
+                        <nav class="main-menu">
+                            <i class="fa fa-bars"></i>
+                        </nav>
+                    </div><!-- /.logo-menu -->
+
+                    <div class="right-header">
+                        <div class="over-btn">
+                            <p>
+                                <a href="#" class="enter-to-club">Вступить в клуб</a>
+                            </p>
+                        </div>
+                        <ul>
+                            <li>
+                                <form class="search-form">
+                                    <input name="q" type="text"  class="search" size="40"
+                                           placeholder="Поищи мной" maxlength="50" autocomplete="off">
+                                    <input class="search-submit" type="submit" value="">
+                                </form>
+                            </li>
+                            <li>
+                                <button class="phone-number" type="button"><i class="fa fa-phone"></i></button>
+                            </li>
+                            <li>
+                                <span class="enter"></span>
+                            </li>
+                        </ul>
+                    </div><!-- /.right-header -->
+                    <div class="bottom-line"></div>
+                </div><!-- /.header-line -->
+            </div>
+
+        </header>
+        <div class="container">
+            <nav class="page-nav">
+                <ul class="navigation">
+                    <li><a href="#" onclick="myscrollslider(1); return false" data="1" class="home"></a></li>
+                    <li><a href="#" onclick="myscrollslider(2); return false" data="2" class="users"></a></li>
+                    <li><a href="#" onclick="myscrollslider(3); return false" data="3" class="star"></a></li>
+                    <li><a href="#" onclick="myscrollslider(4); return false" data="4" class="calendar"></a></li>
+                    <li><a href="#" onclick="myscrollslider(5); return false" data="5" class="comment active-page"></a></li>
+                </ul>
+            </nav><!-- /.page-nav -->
+            <div class="slider-block registration">
+                <h2>
+                    Регистрация КАНДИДАТА
+                    <span>ИНФОРМАЦИЯ О БИЗНЕСЕ</span>
+                </h2>
+                <div class="registration-block">
+                    <div class="form-reg-block">
+                        <form class="registration-form">
+                            <div class="visible-block">
+                                <!-- form-1 -->
+                                <div class="form-block-1 form-window">
+                                    <p>
+                                        <input type="text" class="user-name" placeholder="ФИО">
+                                    </p>
+                                    <p>
+                                        <input type="text" class="date-user" placeholder="Дата вашего рождения">
+                                    </p>
+                                    <p>
+                                        <input type="text" class="phone" placeholder="Ваш телефон">
+                                    </p>
+                                    <p>
+                                        <input type="text" class="user-email" placeholder="Ваш e-mail">
+                                    </p>
+                                    <button class="next-btn" type="button" onclick="nextFormReg()">Далее</button>
+                                </div>
+                                <!-- form-2 -->
+                                <div class="form-block-2 form-window">
+                                    <p class="select-p">
+                                        <select>
+                                            <option selected disabled>Сфера деятельности</option>
+                                            <option>Деятельность1</option>
+                                            <option>Деятельность2</option>
+                                        </select>
+                                    </p>
+                                    <p>
+                                        <input type="text" class="company-name" placeholder="Название компании">
+                                    </p>
+                                    <p>
+                                        <input type="text" class="user-position" placeholder="Занимаемая должность">
+                                    </p>
+                                    <p>
+                                        <input type="text" class="company-site" placeholder="Веб-сайт компании (если есть)">
+                                    </p>
+                                    <button class="next-btn" type="button" onclick="showRegFormNext()">Далее</button>
+                                </div>
+                                <div class="form-block-3 form-window">
+                                    <p class="select-p">
+                                        <input type="text" class="kids" placeholder="У Вас есть дети? Возраст">
+                                        <span class="info" data="1"></span>
+                                    </p>
+                                    <p>
+                                        <select>
+                                            <option selected disabled>Откуда вы о нас узнали?</option>
+                                            <option>Слышал</option>
+                                            <option>Приснилось</option>
+                                        </select>
+                                    </p>
+                                    <p>
+                                        <select>
+                                            <option selected disabled>Заявление о вступлении в ХКП</option>
+                                            <option>Вступаю</option>
+                                            <option>Не хочу вступать</option>
+                                        </select>
+                                        <span class="info" data="2"></span>
+                                    </p>
+                                    <p>
+                                        <select>
+                                            <option selected disabled>Обработка данных</option>
+                                            <option>Хочу</option>
+                                            <option>Не хочу</option>
+                                        </select>
+                                        <span class="info" data="3"></span>
+                                    </p>
+                                    <button class="next-btn" type="button" onclick="showRegFormLust()">Далее</button>
+                                </div>
+                                <div class="form-block-4 form-window">
+                                    <figure class="user-photo">
+                                        <a href="#">
+                                            <span></span>
+                                            <p>Выберите и загрузите свое фото JPEG, PNG, BMP</p>
+                                        </a>
+                                    </figure>
+                                    <button class="next-btn send-registration" type="button">Отправить анкету</button>
+                                </div>
+                            </div>
+                        </form><!-- /.registration-form -->
+                        <div class="info-block info-block-1">
+                            <div>
+                                <h5>У вас есть дети?</h5>
+                                <p>
+                                    Записываюсь в Харьковский Клуб
+                                    Предпринимателей и согласен(на)
+                                    оставаться членом клуба в течение
+                                    минимум одного года. Обязуюсь
+                                    своевременно и в полном объеме
+                                    оплачивать членский взнос. После
+                                    окончания клубного года членство в
+                                    клубе продлевается автоматически.
+                                    Если я приму решение приостановить
+                                    членство в ХКП, то предупрежу об
+                                    этом зарание.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="info-block info-block-2">
+                            <div>
+                                <h5>Заявление о вступлении в ХКП</h5>
+                                <p>
+                                    Записываюсь в Харьковский Клуб
+                                    Предпринимателей и согласен(на)
+                                    оставаться членом клуба в течение
+                                    минимум одного года. Обязуюсь
+                                    своевременно и в полном объеме
+                                    оплачивать членский взнос. После
+                                    окончания клубного года членство в
+                                    клубе продлевается автоматически.
+                                    Если я приму решение приостановить
+                                    членство в ХКП, то предупрежу об
+                                    этом зарание.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="info-block info-block-3">
+                            <div>
+                                <h5>Обработка данных</h5>
+                                <p>
+                                    Записываюсь в Харьковский Клуб
+                                    Предпринимателей и согласен(на)
+                                    оставаться членом клуба в течение
+                                    минимум одного года. Обязуюсь
+                                    своевременно и в полном объеме
+                                    оплачивать членский взнос. После
+                                    окончания клубного года членство в
+                                    клубе продлевается автоматически.
+                                    Если я приму решение приостановить
+                                    членство в ХКП, то предупрежу об
+                                    этом зарание.
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- /.form-reg-block -->
+                    <div id="page-reg">
+                        <ul>
+                            <li class="active-li"><span class="active-span" data="0"></span></li>
+                            <li><span data="1"></span></li>
+                            <li><span data="2"></span></li>
+                        </ul>
+                    </div>
+                </div><!-- /.registration-block -->
+            </div>
+            <div class="slider-block registration-finish">
+                <h2>
+                    СПАСИБО ЗА РЕГИСТРАЦИЮ
+                    <span>ВАША АНКЕТА ОТПРАВЛЕНА!</span>
+                </h2>
+                <p>
+                    В ближайшее время с вами свяжется администрация Клуба и назначит дату вступления.
+                    Теперь вам необходимо в течение трех дней вступить в нашу группу на Facebook. В этой группе
+                    вы узнаете самые последние и полезные новости деятельности Клуба, и в любое время
+                    сможете  задать интересующие вас вопросы своим одноклубникам или поделиться
+                    актуальной бизнес-информацией.
+                </p>
+                <div class="btn-box">
+                    <button class="enter-to-group"><i class="fa fa-facebook"></i>ВСТУПИТЬ В НАШУ ГРУППУ</button>
+                </div>
+            </div>
+            <div class="bottom-line"></div>
+        </div><!-- /.container -->
+        <footer class="main-footer">
+            <div class="footer-block">
+                <p class="copyright-text">© 2013–2016 Харьковский Клуб Предпринимателей</p>
+                <p class="author"><a href="#">Создание сайта - Webstroy</a></p>
+            </div>
+        </footer>
+    </section>
+
+
+
+
+
+
+    <!--[if lt IE 9]>
+    <script src="libs/html5shiv/es5-shim.min.js"></script>
+    <script src="libs/html5shiv/html5shiv.min.js"></script>
+    <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+    <script src="libs/respond/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/general.js"></script>
+</body>
+</html>
