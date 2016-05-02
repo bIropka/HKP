@@ -85,11 +85,25 @@ ul li {
     font-size: 36pt;
     color: #000000;
     text-transform: uppercase;
-    line-height: 1.3;
+    line-height: 1;
     font-family: 'Ekibastuz_Light', sans-serif;
-    text-align: center;
+    text-align: left;
     font-weight: 100;
 }
+h3 {
+    font-family: 'Ekibastuz-Black', sans-serif;
+    color: #000000;
+    line-height: 1.2;
+    margin: 10px 0;
+    font-size: 16pt;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .color-button {
     background: #00ccff;
     color: #ffffff;
@@ -147,6 +161,9 @@ ul li {
     display: inline-block;
     width: 52px;
     height: 52px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
     vertical-align: middle;
     cursor: pointer;
 }
@@ -155,7 +172,7 @@ ul li {
     background-size: cover;
 }
 .control-content-nav-left:hover {
-    background: url('../img/sprite-content-nav.png') 67% center;
+    background: #00ccff url('../img/sprite-content-nav.png') 67% center;
     background-size: cover;
 }
 .control-content-nav-right {
@@ -163,7 +180,7 @@ ul li {
     background-size: cover;
 }
 .control-content-nav-right:hover {
-    background: url('../img/sprite-content-nav.png') 100% center;
+    background: #00ccff url('../img/sprite-content-nav.png') 100% center;
     background-size: cover;
 }
 .content-nav ul {
@@ -384,6 +401,7 @@ ul li {
 
 /*************** block - breadcrumbs ****************/
 .breadcrumbs {
+    display: inline-block;
     margin: 30px 0;
 }
 .breadcrumbs li {
@@ -394,6 +412,7 @@ ul li {
     font-size: 14pt;
     font-family: "Roboto Regular", sans-serif;
     color: #000000;
+    line-height: 45px;
 }
 .breadcrumbs li a {
     text-decoration: underline;
@@ -409,6 +428,41 @@ ul li {
     margin: 0 20px;
     position: relative;
     top: 5px;
+}
+.breadcrumbs li:last-child a:after {
+    display: none;
+}
+.photo-report-control {
+    display: inline-block;
+    float: right;
+    margin-top: 27px;
+}
+.photo-report-control .left-control, .photo-report-control .right-control {
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.photo-report-control .left-control {
+    background: #e6e6e6 url('../img/sprite-content-nav.png') 0 center;
+    background-size: cover;
+    margin-right: 15px;
+}
+.photo-report-control .left-control:hover {
+    background: #00ccff url('../img/sprite-content-nav.png') 67% center;
+    background-size: cover;
+}
+.photo-report-control .right-control {
+    background: #e6e6e6 url('../img/sprite-content-nav.png') 34% center;
+    background-size: cover;
+}
+.photo-report-control .right-control:hover {
+    background: #00ccff url('../img/sprite-content-nav.png') 100% center;
+    background-size: cover;
 }
 
 /**************** block - footer **********************/
@@ -616,7 +670,7 @@ ul li {
     color: #6666FF;
 }
 /****************** page - contacts **********************/
-.block-contacts .title {
+.block-contacts .title, .block-contacts .sub-title {
     text-align: center;
 }
 .block-contacts .text {
@@ -683,11 +737,6 @@ ul li {
     border: 1px solid #e6e6e6;
     margin: 40px 0 30px;
 }
-.block-about-club .sub-block .title {
-    font-size: 15pt;
-    text-transform: none;
-    margin-bottom: 10px;
-}
 .block-about-club .sub-block .text {
     font-size: 12pt;
     color: #666666;
@@ -739,10 +788,10 @@ ul li {
     display: table;
     width: 100%;
 }
-.article img {
-    display: block;
-    width: 300px;
-    height: auto;
+.article-image {
+    width: 294px;
+    height: 191px;
+    overflow: hidden;
 }
 .article-info {
     display: table-cell;
@@ -762,7 +811,6 @@ ul li {
     margin-right: 5px;
 }
 .article-title {
-    font-family: 'Ekibastuz-Black', sans-serif;
     font-size: 14pt;
     margin: 5px 0 10px;
 }
@@ -856,10 +904,10 @@ ul li {
     overflow: hidden;
     margin: 10px 0;
 }
-.slide-popular-article img {
-    display: block;
+.popular-article-image {
     width: 80px;
-    height: auto;
+    height: 51px;
+    overflow: hidden;
     float: left;
 }
 .slide-popular-article .text {
@@ -909,10 +957,6 @@ ul li {
     position: relative;
     margin-bottom: 20px;
 }
-.block-events-title .sub-title {
-    text-align: left;
-    line-height: 1;
-}
 .block-events-title .show-calendar {
     position: absolute;
     top: 35px;
@@ -946,11 +990,6 @@ ul li {
     overflow: hidden;
     position: relative;
     float: left;
-}
-.event-image img {
-    display: block;
-    width: 100%;
-    height: auto;
 }
 .event-image .inner-triangle {
     width: 0;
@@ -992,11 +1031,6 @@ ul li {
     margin-left: 15px;
     font-size: 12pt;
 }
-.event-title {
-    font-family: 'Ekibastuz-Black', sans-serif;
-    font-size: 16pt;
-    margin: 10px 0;
-}
 .event-description {
     color: #999999;
     font-size: 12pt;
@@ -1019,3 +1053,126 @@ ul li {
 .event-date-time i {
     color: #00ccff;
 }
+
+/************* pages - photo-reports sna single photo-report *************/
+.photo-reports, .photos {
+    text-align: center;
+}
+.photo-reports li, .photos li {
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    margin-top: 50px;
+    text-align: left;
+}
+.photo-reports li:nth-child(2), .photo-reports li:nth-child(5),
+.photo-reports li:nth-child(8), .photo-reports li:nth-child(11),
+.photos li:nth-child(2), .photos li:nth-child(5),
+.photos li:nth-child(8), .photos li:nth-child(11){
+    margin: 50px 55px 0;
+}
+.photo-reports-image, .photo {
+    width: 300px;
+    height: 175px;
+    overflow: hidden;
+}
+.photo-report-date {
+    margin: 10px 0 5px;
+    color: #b3b3b3;
+}
+.photo-report-date i {
+    font-size: 10pt;
+    position: relative;
+    bottom: 2px;
+    margin-right: 5px;
+}
+.photo-reports .photo-report-title {
+    font-size: 13pt;
+    margin-top: 0;
+}
+.photo-reports .photo-report-description {
+    font-size: 11pt;
+    color: #999999;
+}
+.single-photo-report-description {
+    font-size: 14pt;
+    color: #666666;
+    line-height: 1.3;
+}
+.photo {
+    position: relative;
+    cursor: pointer;
+}
+.shadow-layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+    background: rgba(0, 0, 0, 0.6) url('../img/zoom-image.png') no-repeat center;
+    background-size: 57px 57px;
+}
+.photo:hover .shadow-layer {
+    display: block;
+}
+.block-single-photo-report .title {
+    display: inline-block;
+}
+.block-single-photo-report .photo-report-date {
+    display: inline-block;
+    float: right;
+    color: #000000;
+    line-height: 38pt;
+    margin: 0;
+}
+.social-likes {
+    display: inline-block;
+    margin-top: 50px;
+}
+.social-likes li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.social-likes li a {
+    display: inline-block;
+    width: 100px;
+    height: 22px;
+    vertical-align: middle;
+}
+.likes-counter {
+    display: inline-block;
+    margin-left: 5px;
+    width: 28px;
+    height: 23px;
+    background: url('../img/likes-counter.png') no-repeat center;
+    background-size: cover;
+    text-align: center;
+    line-height: 23px;
+    vertical-align: middle;
+    color: #4d4d4d;
+    font-size: 8pt;
+}
+.come-back {
+    display: inline-block;
+    float: right;
+    border: 2px solid #b3b3b3;
+    font-family: "Roboto Regular", sans-serif;
+    font-size: 12pt;
+    background: transparent;
+    color: #999999;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 40px;
+    margin-top: 45px;
+    text-decoration: none;
+}
+.come-back:hover {
+    background: #b3b3b3;
+    color: #ffffff;
+}
+.come-back:active {
+    border: 2px solid #ffffff;
+}
+/************* page -  *************/
