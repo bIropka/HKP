@@ -95,11 +95,12 @@ ul li {
     color: #ffffff;
     cursor: pointer;
     text-align: center;
-    font-family: "CleaSans", sans-serif;
-    font-size: 12pt;
+    font-family: "CleaSans-bold", sans-serif;
+    font-size: 10pt;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+    padding: 10px 40px;
 }
 .color-button:hover {
     background: #99cc33;
@@ -118,15 +119,15 @@ ul li {
     background: transparent;
     color: #000000;
     text-align: center;
-    padding: 7px 30px;
     cursor: pointer;
     text-transform: uppercase;
+    padding: 10px 40px;
 }
 .empty-button:hover {
     background: #00ccff;
+    color: #ffffff;
 }
 .empty-button:active {
-    background: #00ccff;
     border: 2px solid #ffffff;
 }
 
@@ -919,6 +920,9 @@ ul li {
     padding: 10px 40px;
 }
 
+.block-next-events {
+    margin-bottom: 100px;
+}
 .event .block-content:after {
     display: block;
     width: 100%;
@@ -926,19 +930,15 @@ ul li {
     border: 1px solid #e6e6e6;
     margin-top: 50px;
 }
+.event:last-child .block-content:after {
+    display: none;
+}
 
 .event {
     padding-top: 50px;
 }
-.event:hover {
+.open-event {
     background: #f7f7f8;
-}
-.event:hover .inner-triangle {
-    border-right: 23px solid #f7f7f8;
-}
-.event:hover .details {
-    background: #00ccff;
-    color: #ffffff;
 }
 .event-image {
     width: 390px;
@@ -962,6 +962,9 @@ ul li {
     top: 50px;
     right: 0;
 }
+.open-event .inner-triangle {
+    border-right: 23px solid #f7f7f8;
+}
 
 .event-info {
     width: 600px;
@@ -970,10 +973,49 @@ ul li {
     vertical-align: top;
     position: relative;
 }
-
+.event-type {
+    display: inline-block;
+    padding: 5px 10px;
+    font-family: "Roboto Bold", sans-serif;
+    font-size: 11pt;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 3px;
+}
+.event-seminar .event-type {background: #ff6633;}
+.open-event .event-type {background: #33cc99;}
+.event-training .event-type {background: #669933;}
+.event-master-class .event-type {background: #9933cc;}
+.event-english .event-type {background: #cc3300;}
+.speaker {
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 12pt;
+}
+.event-title {
+    font-family: 'Ekibastuz-Black', sans-serif;
+    font-size: 16pt;
+    margin: 10px 0;
+}
+.event-description {
+    color: #999999;
+    font-size: 12pt;
+}
 .event-info .details {
-    padding: 10px 30px;
-    background: transparent;
-    color: #000000;
-    border: 2px solid #00ccff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.event-date-time {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.event-date, .event-time {
+    display: inline-block;
+    font-size: 12pt;
+    margin-left: 20px;
+}
+.event-date-time i {
+    color: #00ccff;
 }
