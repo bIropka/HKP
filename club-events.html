@@ -5,10 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <title>Contacts</title>
+    <title>Мероприятия клуба</title>
 
-    <link href="css/custom-styles.css" rel="stylesheet" type="text/css">
+    <link href="css/slick.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="css/custom-styles.css" rel="stylesheet" type="text/css">
 
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 </head>
@@ -70,59 +71,138 @@
 
         <ul class="breadcrumbs">
             <li><a href="index.html">Главная</a></li>
-            <li>Контакты</li>
+            <li>Мероприятия клуба</li>
         </ul>
 
     </div>
 
 </div>
 
-<div class="block-wrap block-contacts">
+<div class="block-wrap block-events-title">
 
     <div class="block-content">
 
-        <h1 class="title">КОНТАКТНАЯ ИНФОРМАЦИЯ</h1>
+        <h1 class="title">Мероприятия клуба</h1>
 
-        <h2 class="sub-title">ХОТИТЕ СТАТЬ ЧЛЕНОМ КЛУБА?</h2>
+        <h2 class="sub-title">БЛИЖАЙШИЕ МЕРОПРИЯТИЯ</h2>
 
-        <h4 class="text">
-            Для того чтобы стать членом Харьковского Клуба Предпринимателей
-            вам необходимо заполнить простую анкету и на собрании совета
-            ваша канидатура будет рассмотрена
-        </h4>
-
-        <button class="color-button to-fill-form">Заполнить анкету</button>
+        <button class="color-button show-calendar">Календарь мероприятий</button>
 
     </div>
 
 </div>
 
-<div class="block-wrap block-contacts-footer">
+<div class="block-wrap block-next-events">
 
-    <div class="block-content">
+    <ul class="events">
 
-        <div class="block-phone">
-            <h2 class="sub-title">ТЕЛЕФОН ДЛЯ СПРАВОК</h2>
-            <h3 class="phone-number">+38099 108 80 85</h3>
-            <p class="text">
-                Стоимость звонков согласно тарифам вашего оператора мобильной связи
-            </p>
-        </div>
+        <li class="event">
 
-        <div class="block-email">
-            <h2 class="sub-title">ЭЛЕКТРОННАЯ ПОЧТА</h2>
-            <h3 class="email">xkp.club@gmail.com</h3>
-            <p class="text">
-                Не используйте данный адрес для СПАМ рассылок, вы будете заблокированы
-            </p>
-        </div>
+            <div class="block-content">
 
-        <div class="clearfix"></div>
+                <div class="event-image">
+                    <img src="img/image-event-1.png" alt="event image"/>
+                    <div class="inner-triangle"></div>
+                </div>
 
-    </div>
+                <div class="event-info">
+
+                    <div class="event-type">СЕМИНАР</div>
+
+                    <div class="speaker">Спикер — <span class="speaker-name">Иванов Иван Иванович</span></div>
+
+                    <h3 class="event-title">
+                        Новые возможности для отечественного бизнеса на рынках ЕС
+                    </h3>
+
+                    <p class="event-description">
+                        Приглашаем Вас на практический семинар на тему «Новые возможности для отечественного бизнеса на
+                        рынках ЕС», который пройдет 23 апреля 2014 г. с 16-30 до 18-00  в ауд. 12 Ректорского корпуса
+                        НТУ «ХПИ», ул.Фрунзе 21, по запросу представителей Харьковского малого  и среднего бизнеса.
+                    </p>
+
+                    <button class="color-button details">ПОДРОБНЕЕ</button>
+
+                    <div class="event-date">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <span class="date-value">23 Апреля 2016</span>
+                    </div>
+
+                    <div class="event-time">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <span class="time-value">18:00</span>
+                    </div>
+
+                </div>
+
+                <div class="clearfix"></div>
+
+            </div>
+
+        </li>
+
+        <li class="event">
+
+            <div class="block-content">
+
+                <div class="event-image">
+                    <img src="img/image-event-1.png" alt="event image"/>
+                    <div class="inner-triangle"></div>
+                </div>
+
+                <div class="event-info">
+
+                    <div class="event-type">СЕМИНАР</div>
+
+                    <div class="speaker">Спикер — <span class="speaker-name">Иванов Иван Иванович</span></div>
+
+                    <h3 class="event-title">
+                        Новые возможности для отечественного бизнеса на рынках ЕС
+                    </h3>
+
+                    <p class="event-description">
+                        Приглашаем Вас на практический семинар на тему «Новые возможности для отечественного бизнеса на
+                        рынках ЕС», который пройдет 23 апреля 2014 г. с 16-30 до 18-00  в ауд. 12 Ректорского корпуса
+                        НТУ «ХПИ», ул.Фрунзе 21, по запросу представителей Харьковского малого  и среднего бизнеса.
+                    </p>
+
+                    <button class="color-button details">ПОДРОБНЕЕ</button>
+
+                    <div class="event-date">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <span class="date-value">23 Апреля 2016</span>
+                    </div>
+
+                    <div class="event-time">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <span class="time-value">18:00</span>
+                    </div>
+
+                </div>
+
+                <div class="clearfix"></div>
+
+            </div>
+
+        </li>
+
+
+
+    </ul>
 
 </div>
 
+<div class="content-nav">
+
+    <div class="control-content-nav control-content-nav-left"></div>
+    <ul>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+    </ul>
+    <div class="control-content-nav control-content-nav-right"></div>
+
+</div>
 
 <div class="block-wrap block-footer-top">
 
@@ -199,7 +279,8 @@
 <script src="libs/respond/respond.min.js"></script>
 <![endif]-->
 
-<script src="js/general.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/custom-scripts.js"></script>
 
 </body>
 </html>
