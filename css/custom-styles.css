@@ -1395,3 +1395,10 @@ img {
 .block-member-control .right-control-block .control-text {
     text-align: right;
 }
+
+/************* page - partnership *************/
+.block-partnership .text {
+    font-size: 14pt;
+    line-height: 1.2;
+    margin: 20px 0;
+}
