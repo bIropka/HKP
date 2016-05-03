@@ -4,12 +4,16 @@
 $(document).ready(function() {
     $(".search-submit, .search").hover(
         function () {
-            $(".search").css({"width": "230", "padding": "0 10px", "opacity": "1"});
-            $('.search-submit').css({"background-color": "#FF6633", "border-color": "white"});
+            if($(window).width() > 1024) {
+                $(".search").css({"width": "230", "padding": "0 10px", "opacity": "1"});
+                $('.search-submit').css({"background-color": "#FF6633", "border-color": "white"});
+            }
         },
         function () {
-            $(".search").css({"width": "0", "padding": "0", "opacity": "0"});
-            $('.search-submit').css({"background-color": "rgba(0,0,0,0)", "border-color": "rgba(0,0,0,0)"});
+            if($(window).width() > 1024) {
+                $(".search").css({"width": "0", "padding": "0", "opacity": "0"});
+                $('.search-submit').css({"background-color": "rgba(0,0,0,0)", "border-color": "rgba(0,0,0,0)"});
+            }
         }
     );
 

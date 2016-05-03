@@ -25,7 +25,17 @@ $(document).ready(function() {
     /* members photo animation */
     $('.photo-member').hover(
         function(){
-            $(this).find('.hidden-layer').stop().slideToggle(400);
+            if($(window).width() > 1024) {
+                $(this).find('.hidden-layer').stop().slideToggle(400);
+            }
+        }
+    );
+
+    $('.photo-member').click(function() {
+            if($(window).width() < 1024) {
+                $('.hidden-layer').stop().slideUp(400);
+                $(this).find('.hidden-layer').stop().slideDown(400);
+            }
         }
     );
     /* the end of the members photo animation */
