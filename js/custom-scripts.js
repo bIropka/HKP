@@ -22,5 +22,13 @@ $(document).ready(function() {
     });
     /* the end of the slider 'banners' */
 
+    /* members photo animation */
+    $('.photo-member').hover(
+        function(){
+            $(this).find('.hidden-layer').stop().slideToggle(400);
+        }
+    );
+    /* the end of the members photo animation */
+
 });
 
