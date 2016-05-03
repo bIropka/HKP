@@ -1397,8 +1397,126 @@ img {
 }
 
 /************* page - partnership *************/
-.block-partnership .text {
+.block-partnership .block-content>.text {
     font-size: 14pt;
     line-height: 1.2;
-    margin: 20px 0;
+    margin-top: 20px;
+}
+
+.block-partnership .sub-block:before {
+    display: block;
+    content: '';
+    width: 100%;
+    border: 1px solid #e6e6e6;
+    margin: 30px 0 25px;
+}
+.block-partnership h3 {
+    font-size: 14pt;
+}
+.block-partnership .sub-block .text {
+    font-size: 12pt;
+    color: #666666;
+}
+.block-partnership .sub-block ul li:before {
+    display: inline-block;
+    content: '-';
+    margin-right: 5px;
+}
+.get-in-touch {
+    padding: 10px 80px;
+    margin: 50px 0;
+}
+
+.block-advertising-cost {
+    padding: 50px 0;
+    background: #f7f7f8;
+}
+.block-advertising-cost ul {
+    margin-top: 50px;
+}
+.block-advertising-cost ul li:after {
+    display: block;
+    content: '';
+    width: 100%;
+    border: 1px solid #e6e6e6;
+    margin: 30px 0 25px;
+}
+.block-advertising-cost .service {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+}
+.block-advertising-cost .service-cost {
+    display: inline-block;
+    margin-left: 100px;
+    vertical-align: middle;
+    width: 140px;
+}
+.block-advertising-cost .to-order {
+    vertical-align: middle;
+    margin-left: 70px;
+    padding: 10px 60px;
+}
+.block-advertising-cost ul li h3 {
+    margin: 0;
+}
+.block-advertising-cost .service-description, .block-advertising-cost .cost-info {
+    color: #808080;
+    font-size: 12pt;
+}
+
+.block-partners {
+    margin: 50px 0;
+}
+.block-partners ul {
+    margin-top: 50px;
+}
+.block-partners ul li {
+    position: relative;
+    height: 170px;
+    margin-bottom: 60px;
+}
+.block-partners ul li:after {
+    display: block;
+    content: '';
+    width: 100%;
+    border: 1px solid #e6e6e6;
+    margin: 30px 0;
+}
+.partner-logo {
+    width: 200px;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px solid #e6e6e6;
+}
+.partner-logo img {
+    width: auto;
+    height: auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.partner-info {
+    margin-left: 220px;
+    position: relative;
+    height: 100%;
+}
+.partner-info h3 {
+    margin: 0 0 10px 0;
+}
+.block-partners ul li .text {
+    color: #808080;
+    font-size: 11pt;
+}
+.block-partners ul li a {
+    text-decoration: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
