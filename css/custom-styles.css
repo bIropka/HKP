@@ -268,7 +268,7 @@ img {
     display: table;
     height: 44px;
 }
-.main-menu .fa-bars:hover {
+.main-menu .fa-bars:hover, .main-menu .fa-times:hover {
     opacity: 0.8;
 }
 .right-header {
@@ -401,9 +401,98 @@ img {
 
 /**************** block - header ******************/
 .block-header {
-    background: #000000;
+    background: #0c0c0c;
+}
+.main-menu .fa-times {
+    display: table-cell;
+    vertical-align: middle;
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: normal;
+    cursor: pointer;
+    transition: all 300ms;
+}
+.block-header-fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.menu-panel {
+    width: 100%;
+    height: 0;
+    display: none;
+    position: fixed;
+    top: 65px;
+    left: 0;
+    z-index: 10;
+    background: #1a1a1a;
 }
 
+.menu {
+    margin-top: 60px;
+    margin-left: 120px;
+}
+.menu>li {
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    margin-bottom: 25px;
+    margin-left: 30px;
+}
+.sub-menu-name {
+    font-family: 'Ekibastuz-Black', sans-serif;
+    font-size: 20pt;
+    color: #00b3e0;
+    margin-bottom: 20px;
+}
+.sub-menu li a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Ekibastuz-Black', sans-serif;
+    font-size: 11pt;
+    color: #ffffff;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+.sub-menu li a:hover {
+    color: #ffcc00;
+}
+.sub-menu li .active {
+    color: #ffcc00;
+}
+.sub-menu li .active:before {
+    display: inline-block;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-left: 6px solid #ffcc00;
+    border-bottom: 3px solid transparent;
+    margin-left: -6px;
+    position: relative;
+    left: -5px;
+    top: -2px;
+}
+.menu-panel .author {
+    position: absolute;
+    bottom: 100px;
+    right: 50px;
+    color: #ffffff;
+}
+.menu-panel .author a {
+    display: block;
+    padding: 2px 4px 2px 25px;
+    background: url("../img/webstroy_stroy.png")3px 4px no-repeat;
+    color: #ffffff;
+    margin-top: 10px;
+    font-size: 10pt;
+}
+.menu-panel .author a:hover {
+    background: url("../img/webstroy_stroy-h.png")3px 4px no-repeat #ffffff;
+    border-radius: 10px;
+    color: #6666FF;
+}
 /*************** block - breadcrumbs ****************/
 .breadcrumbs {
     display: inline-block;

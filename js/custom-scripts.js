@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+    /* main menu script */
+    $('nav i').click(function(){
+        $(this).toggleClass('fa-bars fa-times');
+    });
+    /* the end of the main menu script */
+
     /* slider popular articles*/
     $('.slider-popular-articles').slick({
         vertical: true,
