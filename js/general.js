@@ -2,6 +2,32 @@
  * Created by Anna on 12.11.2015.
  */
 $(document).ready(function() {
+
+    /* main menu script */
+    $('.main-menu i').click(function(){
+        $(this).toggleClass('fa-bars fa-times');
+        $('nav').slideToggle();
+    });
+    /* the end of the main menu script */
+
+    /* members photo animation */
+    $('.photo-member').hover(
+        function(){
+            if($(window).width() > 1024) {
+                $(this).find('.hidden-layer').stop().slideToggle(400);
+            }
+        }
+    );
+
+    $('.photo-member').click(function() {
+            if($(window).width() < 1024) {
+                $('.hidden-layer').stop().slideUp(400);
+                $(this).find('.hidden-layer').stop().slideDown(400);
+            }
+        }
+    );
+    /* the end of the members photo animation */
+
     $(".search-submit, .search").hover(
         function () {
             if($(window).width() > 1024) {
@@ -127,8 +153,9 @@ $(document).ready(function() {
         $('.registration-finish').css('display','block');
     });
 
-
 });
+
+
 //registration
 var navReg = document.getElementById('page-reg').getElementsByTagName('li');
 function firstForm() {
